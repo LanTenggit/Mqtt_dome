@@ -1,0 +1,242 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+M2MQTT TEST
+</name>
+</assembly>
+<members>
+<member name="T:M2MQTT_TEST.My.Resources.Resources">
+<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member>
+<member name="P:M2MQTT_TEST.My.Resources.Resources.ResourceManager">
+<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member>
+<member name="P:M2MQTT_TEST.My.Resources.Resources.Culture">
+<summary>
+  重写当前线程的 CurrentUICulture 属性
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member>
+<member name="M:M2MQTT_TEST.EncryptMod.MD5EncryptProc(System.String)">
+ <summary>
+ 用MD5加密方式加密文本,可以直接使用。在模块中的主要作用是用于加密关键字 (返回值:加密后的文本)
+ </summary>
+ <param name="strData">需要加密的文本</param>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:M2MQTT_TEST.EncryptMod.EnText(System.String,System.String)">
+ <summary>
+ 加密 (返回值:加密后的文本)
+ </summary>
+ <param name="StrText">需要加密的文本</param>
+ <param name="strKey">加密时使用的关键字，俗称密码。</param>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:M2MQTT_TEST.EncryptMod.DeText(System.String,System.String)">
+ <summary>
+ 解密 (返回值:解密后的文本)
+ </summary>
+ <param name="strText">需要解密的文本</param>
+ <param name="strKey">解密时使用的关键字，必需和加密时的关健字相同，才可以解密出正确的文本</param>
+ <remarks></remarks>
+ 
+</member>
+<member name="P:M2MQTT_TEST.Form1.M2Client">
+ <summary>
+ 实例化订阅客户端
+ </summary>
+</member>
+<member name="F:M2MQTT_TEST.Form1.myBol">
+ <summary>
+ 是否启动服务
+ </summary>
+</member>
+<member name="M:M2MQTT_TEST.Form1.MqttMsgPublishEventHandler(System.Object,uPLibrary.Networking.M2Mqtt.Messages.MqttMsgPublishEventArgs)">
+ <summary>
+ 订阅显示
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.MqttMsgUnsubscribedEventHandler(System.Object,uPLibrary.Networking.M2Mqtt.Messages.MqttMsgUnsubscribedEventArgs)">
+ <summary>
+ mqtt消息取消订阅事件
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.MqttMsgPublishedEventHandler(System.Object,uPLibrary.Networking.M2Mqtt.Messages.MqttMsgPublishedEventArgs)">
+ <summary>
+ MQTT消息发布事件处理程序
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.ConnectionClosedEventHandler(System.Object,System.EventArgs)">
+ <summary>
+ 连接已关闭事件处理程序
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.Button2_Click(System.Object,System.EventArgs)">
+ <summary>
+ 推送
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.client_MqttMsgPublish(System.String,System.String)">
+ <summary>
+ 推送信息
+ </summary>
+ <param name="publishString"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.Button6_Click(System.Object,System.EventArgs)">
+ <summary>
+ 随机客户端ID
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.Button4_Click(System.Object,System.EventArgs)">
+ <summary>
+ 撤销订阅
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.TextBox3_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ 服务器
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.TextBox4_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ 端口
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.TextBox5_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ 客户端ID
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.TextBox6_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ 账户
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.TextBox7_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ 密码
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:M2MQTT_TEST.Form1.TextBox8_TextChanged(System.Object,System.EventArgs)">
+ <summary>
+ 订阅主题
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="F:M2MQTT_TEST.Function_set.progpath">
+ <summary>
+ 获取应用程序的安装目录
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:M2MQTT_TEST.Function_set.Configurationpath">
+ <summary>
+ 配置文件路径
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:M2MQTT_TEST.Function_set.GetPrivateProfileString(System.String@,System.String@,System.String@,System.String@,System.Int32,System.String@)">
+ <summary>
+ 声明INI配置文件读写API函数
+ </summary>
+ <param name="lpApplicationName"></param>
+ <param name="lpKeyName"></param>
+ <param name="lpDefault"></param>
+ <param name="lpReturnedString"></param>
+ <param name="nSize"></param>
+ <param name="lpFileName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:M2MQTT_TEST.Function_set.GetINI(System.String,System.String,System.String,System.String)">
+ <summary>
+ 定义读取配置文件函数
+ </summary>
+ <param name="Section"></param>
+ <param name="AppName"></param>
+ <param name="lpDefault"></param>
+ <param name="FileName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:M2MQTT_TEST.Function_set.WriteINI(System.String,System.String,System.String,System.String)">
+ <summary>
+ 定义写入配置文件函数
+ </summary>
+ <param name="Section"></param>
+ <param name="AppName"></param>
+ <param name="lpDefault"></param>
+ <param name="FileName"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:M2MQTT_TEST.Function_set.The_server">
+ <summary>
+ 服务器
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:M2MQTT_TEST.Function_set.port">
+ <summary>
+ 端口
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:M2MQTT_TEST.Function_set.client_ID">
+ <summary>
+ 客户端ID
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:M2MQTT_TEST.Function_set.account">
+ <summary>
+ 账户
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:M2MQTT_TEST.Function_set.Password">
+ <summary>
+ 密码
+ </summary>
+ <returns></returns>
+</member>
+<member name="P:M2MQTT_TEST.Function_set.Subscription_theme">
+ <summary>
+ 订阅主题
+ </summary>
+ <returns></returns>
+</member>
+</members>
+</doc>
